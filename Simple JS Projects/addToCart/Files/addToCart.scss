@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    height: 85vh;
+    display: grid;
+    background-color: blue;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 10px;
+}
+
+.stored-items img {
+    width: 100px;
+    height: 100px;
+    transition: all 0.1s ease-in-out;
+}
+.stored-items {
+    position: relative;
+}
+.stored-items span {
+    position: absolute;
+    // right: 30%;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.stored-items .store-icon .fas {
+    color: skyblue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+        color: wheat;
+    }
+}
+.item-container {
+    display: flex;
+}
+.cart-items {
+    background-color: yellowgreen;
+    width: 20vw;
+    height: 100%;
+    // height: 9%;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // overflow-y: auto;
+    button {
+        border: none;
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+    .all-info {
+        width: 100%;
+        height: 70%;
+        max-height: 70vh;
+        background-color: red;
+        transition: all 1s ease-in-out;
+        overflow: auto;
+    }
+    .totalPrice {
+        width: 100%;
+        height: 15%;
+        background-color: seagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+}
+
+.individualDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // overflow-y: auto;
+    margin-bottom: 10px;
+    background-color: salmon;
+}
+
+.individualDiv img {
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+// .items div {
+//     text-align: center;
+// }
+
+.modelContainer {
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.show {
+    display: block;
+    position: absolute;
+}
+
+.imgDisplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: url("../images - Copy/clock.png") center/cover fixed no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cross {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 13%;
+    .modelCross {
+        font-size: 50px;
+        color: brown;
+        transition: all 1s ease-in-out;
+        &:hover {
+            color: red;
+        }
+    }
+}
+.modleLeftRight {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    color: brown;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        color: red;
+    }
+}
+
+.fa-chevron-left {
+    left: 7%;
+}
+.fa-chevron-right {
+    right: 7%;
+}
+
+// .items div span {
+//     color: rgb(252, 0, 0);
+//     // position: absolute;
+//     font-size: 6px;
+//     font-weight: bold;
+// }
+
+// .stored-items {
+//     position: relative;
+// }
+
+// .stored-items {
+//     position: relative;
+// }
+// .store-icon {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     transform: translate(100%, 100%);
+// }
+// .fas {
+//     font-size: 30px;
+//     color: purple;
+// }
+
+// .stored-items:hover .store-icon {
+//     color: red;
+//     transform: translate(0, 0);
+//     // background-color: brown;
+//     border-radius: 50px;
+// }

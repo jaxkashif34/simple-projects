@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    display: grid;
+    background-color: blue;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 10px;
+}
+.cake {
+    background-color: chartreuse;
+}
+
+.fruit {
+    background-color: crimson;
+}
+.veg {
+    background-color: rgb(67, 1, 247);
+}
+.choclate {
+    background-color: rgb(252, 0, 0);
+}
+.meet {
+    background-color: rgb(0, 204, 255);
+}
+
+.items div {
+    text-align: center;
+    color: rgb(252, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stored-items img {
+    width: 100px;
+    height: 100px;
+    transition: all 0.1s ease-in-out;
+}
+
+.stored-items span {
+    position: absolute;
+    color: darkcyan;
+    font-weight: bold;
+}
+.items .cake {
+    background: url("../images - Copy/cake1.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.items .fruit {
+    background: url("../images - Copy/fruit1.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.items .veg {
+    background: url("../images - Copy/veg1.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.items .meet {
+    background: url("../images - Copy/meet2.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.items .choclate {
+    background: url("../images - Copy/choclate2.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

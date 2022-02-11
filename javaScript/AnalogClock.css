@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#B7F8DB), to(#50A7C2)) fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    background: url(./images/clock.png) no-repeat;
+    background-position: center;
+    width: 34%;
+    height: 74%;
+    border-radius: 100%;
+}
+
+#center {
+    position: absolute;
+    top: 48.5%;
+    left: 47.5%;
+    width: 5%;
+    height: 6%;
+    border-radius: 100%;
+    background: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+.hands {
+    position: absolute;
+    left: 48.2%;
+    bottom: 48%;
+    transform-origin: bottom;
+    background: #000;
+}
+
+#hour {
+    left: 48.93%;
+    bottom: 48%;
+    width: 2.1%;
+    height: 25%;
+}
+
+#minute {
+    left: 49.1%;
+    bottom: 48%;
+    width: 1.8%;
+    height: 30%;
+}
+
+#second {
+    transform-origin: 50% 80%;
+    left: 49.5%;
+    bottom: 40%;
+    width: 1%;
+    height: 45%;
+}

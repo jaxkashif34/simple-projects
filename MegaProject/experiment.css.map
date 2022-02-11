@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,mBAAmB,CAAC;EAChB,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,yBAAyB,CAAC;EACtB,aAAa,EAAE,IAAI;EACnB,eAAe,EAAE,SAAS;EAC1B,gBAAgB,EAAE,oEAAoE;EACtF,SAAS,EAAE,uBAAuB;CACrC;;AAED,UAAU,CAAV,UAAU;EACN,EAAE;IACE,mBAAmB,EAAE,MAAM;;EAG/B,GAAG;IACC,mBAAmB,EAAE,QAAQ;;EAGjC,IAAI;IACA,mBAAmB,EAAE,MAAM",
+    "sources": [
+        "experiment.scss"
+    ],
+    "names": [],
+    "file": "experiment.css"
+}

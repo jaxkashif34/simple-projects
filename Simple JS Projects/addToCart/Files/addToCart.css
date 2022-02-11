@@ -1,0 +1,233 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.items {
+  height: 85vh;
+  display: -ms-grid;
+  display: grid;
+  background-color: blue;
+  -ms-grid-columns: (100px)[5];
+      grid-template-columns: repeat(5, 100px);
+  -ms-grid-rows: (100px)[5];
+      grid-template-rows: repeat(5, 100px);
+  grid-gap: 10px;
+}
+
+.stored-items img {
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.stored-items {
+  position: relative;
+}
+
+.stored-items span {
+  position: absolute;
+  color: darkcyan;
+  font-weight: bold;
+}
+
+.stored-items .store-icon .fas {
+  color: skyblue;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.stored-items .store-icon .fas:hover {
+  color: wheat;
+}
+
+.item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-items {
+  background-color: yellowgreen;
+  width: 20vw;
+  height: 100%;
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-items button {
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.cart-items .all-info {
+  width: 100%;
+  height: 70%;
+  max-height: 70vh;
+  background-color: red;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow: auto;
+}
+
+.cart-items .totalPrice {
+  width: 100%;
+  height: 15%;
+  background-color: seagreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-items .totalPrice span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.individualDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  background-color: salmon;
+}
+
+.individualDiv img {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+}
+
+.modelContainer {
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.show {
+  display: block;
+  position: absolute;
+}
+
+.imgDisplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: url("../images - Copy/clock.png") center/cover fixed no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.cross {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 13%;
+}
+
+.cross .modelCross {
+  font-size: 50px;
+  color: brown;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.cross .modelCross:hover {
+  color: red;
+}
+
+.modleLeftRight {
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  color: brown;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.modleLeftRight:hover {
+  color: red;
+}
+
+.fa-chevron-left {
+  left: 7%;
+}
+
+.fa-chevron-right {
+  right: 7%;
+}
+/*# sourceMappingURL=addToCart.css.map */

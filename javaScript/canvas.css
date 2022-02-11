@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+canvas {
+    border: 1px solid black;
+}
+
+div {
+    position: absolute;
+    color: black;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #141E30;
+background: linear-gradient(to right, #24243e, #141E30, #0f0c29); }
+
+div {
+text-transform: Uppercase;
+font-family: 'Rubik', sans-serif;
+font-size: 6rem;
+color: #E4E5E6; }
+ 
+
+
